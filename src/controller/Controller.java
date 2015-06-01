@@ -3,11 +3,23 @@ package controller;
 import java.io.IOException;
 
 import utils.DatabaseUtils;
+import vue.IHM;
 
 import com.livingobjects.common.configuration.Configuration;
 
 public class Controller implements Runnable {
-
+	
+	private IHM main_ihm;
+	
+	public Controller(IHM in_main_ihm){
+		this.main_ihm = in_main_ihm;
+	}
+	
+	public void calculer_profile (){
+		this.main_ihm.get_profile_saisie();
+		this.main_ihm.update();
+	}
+	
 	@Override
 	public void run() {
 		try {
