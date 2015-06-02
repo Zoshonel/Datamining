@@ -1,38 +1,49 @@
 package controller;
 
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileReader;
 import java.io.IOException;
 
+import model.Profile;
+import vue.IHM;
 import weka.core.Instances;
 import weka.core.converters.ArffSaver;
 import weka.core.converters.CSVLoader;
-import vue.IHM;
 
 import com.livingobjects.common.configuration.Configuration;
 
-public class Controller implements Runnable {
+public class Controller {
 
-	private IHM main_ihm;
+	private IHM ihm;
 
-	public Controller(IHM in_main_ihm) {
-		this.main_ihm = in_main_ihm;
+	public Controller(IHM ihm) {
+		this.ihm = ihm;
 	}
 
-	public void calculer_profile() {
-		this.main_ihm.get_profile_saisie();
-		this.main_ihm.update();
+	public void startEvaluate(Profile profile) {
+		Integer resultFinal = calculerProfile(profile);
+//		ihm.update(resultFinal);
+		ihm.update();
 	}
-
-	@Override
-	public void run() {
+	
+	public Integer calculerProfile(Profile profile) {
 		try {
 			Configuration configuration = Configuration.Create.create(
 					"./configuration.xml", "./configuration.properties");
-			convertCsvToArff(configuration.get("file.csv"),
-					configuration.get("file.arff"));
+			String csvFile = configuration.get("file.csv");
+			String arffFile = configuration.get("file.arff");
+
+			if (!(new File(arffFile).exists())) {
+				convertCsvToArff(csvFile, arffFile);
+			}
+
+			BufferedReader wekaReader = new BufferedReader(new FileReader(arffFile));
+
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		return null;
 	}
 
 	private ArffSaver convertCsvToArff(String csvFilePath, String arffFilePath)
@@ -48,5 +59,4 @@ public class Controller implements Runnable {
 		saver.writeBatch();
 		return saver;
 	}
-
 }

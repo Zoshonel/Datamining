@@ -7,7 +7,7 @@ public class Main {
 	
 	public static void main(String[] args) {
 		 IHM main_vue = new IHM();
-		 Controller controller_main = new Controller(main_vue);
+		 Controller controller = new Controller(main_vue);
 	}
 
 }
