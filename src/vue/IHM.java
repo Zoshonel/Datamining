@@ -4,6 +4,7 @@ import java.awt.GridLayout;
 
 import javax.swing.*;
 
+import controller.Controller;
 import model.Profile;
 
 public class IHM extends JFrame{
@@ -12,7 +13,9 @@ public class IHM extends JFrame{
 	private JTextField champ_num_1,champ_num_2,champ_num_4;
 	private JComboBox<String> champ_box_3,champ_box_5,champ_box_6,champ_box_7;
 	private JProgressBar progressBar;
-	
+	private Controller controller;
+
+
 	public IHM(){
 			super();
 			
@@ -55,6 +58,9 @@ public class IHM extends JFrame{
 			
 			//Bouton evaluer le profile
 			JButton b_evaluer = new JButton("Evaluer");
+				//ecouteur
+				EvaluerListener ecouteur_evaluer = new EvaluerListener(this);
+				b_evaluer.addActionListener(ecouteur_evaluer);
 			
 			
 			//ajout au panel
@@ -112,4 +118,44 @@ public class IHM extends JFrame{
 		this.progressBar.setValue(res_decision);
 	}
 
+	public Controller getController() {
+		return controller;
+	}
+
+	public void setController(Controller controller) {
+		this.controller = controller;
+	}
+
+	public String getChamp_num_1_text() {
+		return champ_num_1.getSelectedText();
+	}
+
+	public String getChamp_num_2_text() {
+		return champ_num_2.getSelectedText();
+	}
+
+	public String getChamp_num_4_text() {
+		return champ_num_4.getSelectedText();
+	}
+
+	public String getChamp_box_3_text() {
+		return champ_box_3.getSelectedItem().toString();
+	}
+
+	public String getChamp_box_5_text() {
+		return champ_box_5.getSelectedItem().toString();
+	}
+
+	public String getChamp_box_6_text() {
+		return champ_box_6.getSelectedItem().toString();
+	}
+
+	public String getChamp_box_7_text() {
+		return champ_box_7.getSelectedItem().toString();
+	}
+
+
+	
+	
+	
 }
