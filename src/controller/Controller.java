@@ -22,9 +22,8 @@ public class Controller {
 	}
 
 	public void startEvaluate(Profile profile) {
-		Integer resultFinal = calculerProfile(profile);
-//		ihm.update(resultFinal);
-		ihm.update();
+		int resultFinal = calculerProfile(profile);
+		ihm.update(resultFinal);
 	}
 	
 	public Integer calculerProfile(Profile profile) {
@@ -39,6 +38,7 @@ public class Controller {
 			}
 
 			BufferedReader wekaReader = new BufferedReader(new FileReader(arffFile));
+			
 
 		} catch (IOException e) {
 			e.printStackTrace();
