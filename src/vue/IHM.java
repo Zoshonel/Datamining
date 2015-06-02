@@ -131,15 +131,27 @@ public class IHM extends JFrame{
 	}
 
 	public String getChamp_num_1_text() {
-		return champ_num_1.getSelectedText();
+		if(champ_num_1.getSelectedText() == null){
+			return "0";
+		}else{
+			return champ_num_1.getSelectedText();
+		}
 	}
 
 	public String getChamp_num_2_text() {
+		if(champ_num_2.getSelectedText() == null){
+			return "0";
+		}else{
 		return champ_num_2.getSelectedText();
+		}
 	}
 
 	public String getChamp_num_4_text() {
+		if(champ_num_4.getSelectedText() == null){
+			return "0";
+		}else{
 		return champ_num_4.getSelectedText();
+		}
 	}
 
 	public String getChamp_box_3_text() {
