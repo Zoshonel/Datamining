@@ -42,6 +42,10 @@ public class IHM extends JFrame{
 			this.champ_num_2 = new JTextField(15);
 			this.champ_num_4 = new JTextField(15);
 			
+			this.champ_num_1.setText("0");
+			this.champ_num_2.setText("0");
+			this.champ_num_4.setText("0");
+			
 			
 			//model et combobox pour les variables qualitatives
 			String[] liste_code1 = new String[]{"A11","A12","A13","A14"};
