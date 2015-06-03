@@ -1,5 +1,6 @@
 package vue;
 import java.awt.BorderLayout;
+import java.awt.Color;
 import java.awt.GridLayout;
 
 import javax.swing.*;
@@ -15,6 +16,7 @@ public class IHM extends JFrame{
 	private JComboBox<KeyValeur> champ_box_3,champ_box_5,champ_box_6,champ_box_7;
 	private JProgressBar progressBar;
 	private Controller controller;
+	private JLabel resultat;
 
 
 	public IHM(){
@@ -36,7 +38,7 @@ public class IHM extends JFrame{
 			JLabel lab_champ5 = new JLabel("Historique des crédits");
 			JLabel lab_champ6 = new JLabel("Job");
 			JLabel lab_champ7 = new JLabel("précense d'un garant");
-			JLabel empty_lab = new JLabel("");
+			resultat = new JLabel("");
 			
 			// Déclaration des champs de saisie
 			this.champ_num_1 = new JTextField(15);
@@ -66,6 +68,9 @@ public class IHM extends JFrame{
 				//ecouteur
 				EvaluerListener ecouteur_evaluer = new EvaluerListener(this);
 				b_evaluer.addActionListener(ecouteur_evaluer);
+				
+				//panel du resultat
+				JPanel p_result = new JPanel(new BorderLayout());
 			
 			
 			//ajout au panel
@@ -83,8 +88,9 @@ public class IHM extends JFrame{
 			saisie_panel.add(champ_box_6);
 			saisie_panel.add(lab_champ7);
 			saisie_panel.add(champ_box_7);
-			saisie_panel.add(empty_lab);
 			saisie_panel.add(b_evaluer);
+			p_result.add(resultat,BorderLayout.LINE_END);
+			saisie_panel.add(p_result);
 		
 			//Ajout au panel principal
 			main_panel.add(saisie_panel,BorderLayout.CENTER);
@@ -122,6 +128,16 @@ public class IHM extends JFrame{
 	public void update(double res_decision){
 		int value = (int) res_decision;
 		this.progressBar.setValue(value);
+		if(value>=60){
+			this.resultat.setText("Good");
+			this.resultat.setForeground(new Color(0, 204, 102));
+			progressBar.setForeground(new Color(0, 204, 102));
+		}else{
+			this.resultat.setText("Bad");
+			progressBar.setForeground(Color.RED);
+			this.resultat.setForeground(Color.RED);
+		}
+		
 	}
 
 	public Controller getController() {
