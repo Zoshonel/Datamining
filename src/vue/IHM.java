@@ -119,8 +119,9 @@ public class IHM extends JFrame{
 		this.setVisible(true);
 	}
 	
-	public void update(int res_decision){
-		this.progressBar.setValue(res_decision);
+	public void update(double res_decision){
+		int value = (int) res_decision;
+		this.progressBar.setValue(value);
 	}
 
 	public Controller getController() {
