@@ -1,0 +1,1012 @@
+@relation german_credit
+
+@attribute checking_status {<0,0<=X<200,>=200,'no checking'}
+@attribute duration numeric
+@attribute credit_history {'no credits/all paid','all paid','existing paid','delayed previously','critical/other existing credit'}
+@attribute credit_amount numeric
+@attribute other_parties {none,'co applicant',guarantor}
+@attribute existing_credits numeric
+@attribute job {'unemp/unskilled non res','unskilled resident',skilled,'high qualif/self emp/mgmt'}
+@attribute class {good,bad}
+
+@data
+<0,6,'critical/other existing credit',1169,none,2,skilled,good
+0<=X<200,48,'existing paid',5951,none,1,skilled,bad
+'no checking',12,'critical/other existing credit',2096,none,1,'unskilled resident',good
+<0,42,'existing paid',7882,guarantor,1,skilled,good
+<0,24,'delayed previously',4870,none,2,skilled,bad
+'no checking',36,'existing paid',9055,none,1,'unskilled resident',good
+'no checking',24,'existing paid',2835,none,1,skilled,good
+0<=X<200,36,'existing paid',6948,none,1,'high qualif/self emp/mgmt',good
+'no checking',12,'existing paid',3059,none,1,'unskilled resident',good
+0<=X<200,30,'critical/other existing credit',5234,none,2,'high qualif/self emp/mgmt',bad
+0<=X<200,12,'existing paid',1295,none,1,skilled,bad
+<0,48,'existing paid',4308,none,1,skilled,bad
+0<=X<200,12,'existing paid',1567,none,1,skilled,good
+<0,24,'critical/other existing credit',1199,none,2,'unskilled resident',bad
+<0,15,'existing paid',1403,none,1,skilled,good
+<0,24,'existing paid',1282,none,1,'unskilled resident',bad
+'no checking',24,'critical/other existing credit',2424,none,2,skilled,good
+<0,30,'no credits/all paid',8072,none,3,skilled,good
+0<=X<200,24,'existing paid',12579,none,1,'high qualif/self emp/mgmt',bad
+'no checking',24,'existing paid',3430,none,1,skilled,good
+'no checking',9,'critical/other existing credit',2134,none,3,skilled,good
+<0,6,'existing paid',2647,none,1,skilled,good
+<0,10,'critical/other existing credit',2241,none,2,'unskilled resident',good
+0<=X<200,12,'critical/other existing credit',1804,none,1,skilled,good
+'no checking',10,'critical/other existing credit',2069,none,2,skilled,good
+<0,6,'existing paid',1374,none,1,'unskilled resident',good
+'no checking',6,'no credits/all paid',426,none,1,'unskilled resident',good
+>=200,12,'all paid',409,none,2,skilled,good
+0<=X<200,7,'existing paid',2415,guarantor,1,skilled,good
+<0,60,'delayed previously',6836,none,2,skilled,bad
+0<=X<200,18,'existing paid',1913,none,1,skilled,good
+<0,24,'existing paid',4020,none,1,skilled,good
+0<=X<200,18,'existing paid',5866,none,2,skilled,good
+'no checking',12,'critical/other existing credit',1264,none,1,'unskilled resident',good
+>=200,12,'existing paid',1474,none,1,'high qualif/self emp/mgmt',good
+0<=X<200,45,'critical/other existing credit',4746,none,2,'unskilled resident',bad
+'no checking',48,'critical/other existing credit',6110,none,1,skilled,good
+>=200,18,'existing paid',2100,'co applicant',1,skilled,bad
+>=200,10,'existing paid',1225,none,1,skilled,good
+0<=X<200,9,'existing paid',458,none,1,skilled,good
+'no checking',30,'existing paid',2333,none,1,'high qualif/self emp/mgmt',good
+0<=X<200,12,'existing paid',1158,none,1,skilled,good
+0<=X<200,18,'delayed previously',6204,none,1,'unskilled resident',good
+<0,30,'critical/other existing credit',6187,none,2,skilled,good
+<0,48,'critical/other existing credit',6143,none,2,'unskilled resident',bad
+'no checking',11,'critical/other existing credit',1393,none,2,'high qualif/self emp/mgmt',good
+'no checking',36,'existing paid',2299,none,1,skilled,good
+<0,6,'existing paid',1352,none,1,'unemp/unskilled non res',good
+'no checking',11,'critical/other existing credit',7228,none,2,'unskilled resident',good
+'no checking',12,'existing paid',2073,'co applicant',1,skilled,good
+0<=X<200,24,'delayed previously',2333,none,1,'unskilled resident',good
+0<=X<200,27,'delayed previously',5965,none,2,'high qualif/self emp/mgmt',good
+'no checking',12,'existing paid',1262,none,1,skilled,good
+'no checking',18,'existing paid',3378,none,1,skilled,good
+0<=X<200,36,'delayed previously',2225,none,2,skilled,bad
+'no checking',6,'all paid',783,guarantor,1,'unskilled resident',good
+0<=X<200,12,'existing paid',6468,none,1,'high qualif/self emp/mgmt',bad
+'no checking',36,'critical/other existing credit',9566,none,2,skilled,good
+>=200,18,'existing paid',1961,none,1,'high qualif/self emp/mgmt',good
+<0,36,'critical/other existing credit',6229,'co applicant',2,'unskilled resident',bad
+0<=X<200,9,'existing paid',1391,none,1,skilled,good
+0<=X<200,15,'critical/other existing credit',1537,guarantor,2,skilled,good
+0<=X<200,36,'no credits/all paid',1953,none,1,'high qualif/self emp/mgmt',bad
+0<=X<200,48,'no credits/all paid',14421,none,1,skilled,bad
+'no checking',24,'existing paid',3181,none,1,skilled,good
+'no checking',27,'existing paid',5190,none,4,skilled,good
+'no checking',12,'existing paid',2171,none,1,skilled,good
+0<=X<200,12,'existing paid',1007,none,1,skilled,good
+'no checking',36,'existing paid',1819,none,1,skilled,bad
+'no checking',36,'existing paid',2394,none,1,skilled,good
+'no checking',36,'existing paid',8133,none,1,skilled,good
+'no checking',7,'critical/other existing credit',730,none,2,'unskilled resident',good
+<0,8,'critical/other existing credit',1164,none,2,'high qualif/self emp/mgmt',good
+0<=X<200,42,'critical/other existing credit',5954,none,2,'unskilled resident',good
+<0,36,'existing paid',1977,none,1,'high qualif/self emp/mgmt',bad
+<0,12,'critical/other existing credit',1526,none,2,'high qualif/self emp/mgmt',good
+<0,42,'existing paid',3965,none,1,skilled,bad
+0<=X<200,11,'delayed previously',4771,none,1,skilled,good
+'no checking',54,'no credits/all paid',9436,none,1,'unskilled resident',good
+0<=X<200,30,'existing paid',3832,none,1,skilled,good
+'no checking',24,'existing paid',5943,none,2,skilled,bad
+'no checking',15,'existing paid',1213,none,1,skilled,good
+'no checking',18,'existing paid',1568,none,1,'unskilled resident',good
+<0,24,'existing paid',1755,guarantor,1,'unskilled resident',good
+<0,10,'existing paid',2315,none,1,'unskilled resident',good
+'no checking',12,'critical/other existing credit',1412,guarantor,2,'high qualif/self emp/mgmt',good
+0<=X<200,18,'critical/other existing credit',1295,none,2,skilled,good
+0<=X<200,36,'existing paid',12612,none,1,skilled,bad
+<0,18,'existing paid',2249,none,1,'high qualif/self emp/mgmt',good
+<0,12,'no credits/all paid',1108,none,2,skilled,bad
+'no checking',12,'critical/other existing credit',618,none,1,skilled,good
+<0,12,'critical/other existing credit',1409,none,1,skilled,good
+'no checking',12,'critical/other existing credit',797,none,1,'unskilled resident',bad
+>=200,24,'critical/other existing credit',3617,'co applicant',2,skilled,good
+0<=X<200,12,'existing paid',1318,none,1,skilled,good
+0<=X<200,54,'no credits/all paid',15945,none,1,skilled,bad
+'no checking',12,'critical/other existing credit',2012,none,1,skilled,good
+0<=X<200,18,'existing paid',2622,none,1,skilled,good
+0<=X<200,36,'critical/other existing credit',2337,none,1,skilled,good
+0<=X<200,20,'delayed previously',7057,none,2,'high qualif/self emp/mgmt',good
+'no checking',24,'existing paid',1469,none,1,'unskilled resident',good
+0<=X<200,36,'existing paid',2323,none,1,skilled,good
+'no checking',6,'delayed previously',932,none,1,skilled,good
+0<=X<200,9,'critical/other existing credit',1919,none,1,skilled,good
+'no checking',12,'existing paid',2445,none,1,skilled,good
+0<=X<200,24,'critical/other existing credit',11938,'co applicant',2,'high qualif/self emp/mgmt',bad
+'no checking',18,'all paid',6458,none,2,'high qualif/self emp/mgmt',bad
+0<=X<200,12,'existing paid',6078,none,1,skilled,good
+<0,24,'existing paid',7721,none,1,skilled,good
+0<=X<200,14,'existing paid',1410,none,1,skilled,good
+0<=X<200,6,'delayed previously',1449,none,2,skilled,good
+>=200,15,'existing paid',392,none,1,skilled,good
+0<=X<200,18,'existing paid',6260,none,1,'unskilled resident',good
+'no checking',36,'critical/other existing credit',7855,none,2,skilled,bad
+<0,12,'existing paid',1680,none,1,skilled,good
+'no checking',48,'critical/other existing credit',3578,none,1,skilled,good
+<0,42,'existing paid',7174,none,1,'high qualif/self emp/mgmt',bad
+<0,10,'critical/other existing credit',2132,'co applicant',2,skilled,good
+<0,33,'critical/other existing credit',4281,none,2,skilled,bad
+0<=X<200,12,'critical/other existing credit',2366,none,1,'high qualif/self emp/mgmt',good
+<0,21,'existing paid',1835,none,2,skilled,bad
+'no checking',24,'critical/other existing credit',3868,none,2,'high qualif/self emp/mgmt',good
+'no checking',12,'existing paid',1768,none,1,'unskilled resident',good
+>=200,10,'critical/other existing credit',781,none,2,skilled,good
+0<=X<200,18,'existing paid',1924,none,1,skilled,bad
+<0,12,'critical/other existing credit',2121,none,2,skilled,good
+<0,12,'existing paid',701,none,1,'unskilled resident',good
+0<=X<200,12,'existing paid',639,none,1,skilled,bad
+0<=X<200,12,'critical/other existing credit',1860,none,2,'high qualif/self emp/mgmt',good
+<0,12,'critical/other existing credit',3499,'co applicant',2,skilled,bad
+0<=X<200,48,'existing paid',8487,none,1,skilled,good
+<0,36,'delayed previously',6887,none,1,skilled,bad
+'no checking',15,'existing paid',2708,none,2,'unskilled resident',good
+'no checking',18,'existing paid',1984,none,2,skilled,good
+'no checking',60,'existing paid',10144,none,1,skilled,good
+'no checking',12,'critical/other existing credit',1240,none,2,skilled,good
+'no checking',27,'delayed previously',8613,none,2,skilled,good
+0<=X<200,12,'existing paid',766,none,1,'unskilled resident',bad
+0<=X<200,15,'critical/other existing credit',2728,guarantor,3,skilled,good
+>=200,12,'existing paid',1881,none,1,'unskilled resident',good
+>=200,6,'existing paid',709,none,1,'unemp/unskilled non res',good
+0<=X<200,36,'existing paid',4795,none,1,'high qualif/self emp/mgmt',good
+<0,27,'existing paid',3416,none,1,'high qualif/self emp/mgmt',good
+<0,18,'existing paid',2462,none,1,skilled,bad
+'no checking',21,'critical/other existing credit',2288,none,1,skilled,good
+0<=X<200,48,'all paid',3566,none,1,skilled,good
+<0,6,'critical/other existing credit',860,none,2,skilled,good
+'no checking',12,'critical/other existing credit',682,none,2,skilled,good
+<0,36,'critical/other existing credit',5371,guarantor,2,skilled,good
+'no checking',18,'critical/other existing credit',1582,none,2,skilled,good
+'no checking',6,'existing paid',1346,none,1,skilled,good
+'no checking',10,'existing paid',1924,none,1,skilled,good
+>=200,36,'existing paid',5848,none,1,skilled,good
+0<=X<200,24,'critical/other existing credit',7758,none,1,skilled,good
+0<=X<200,24,'delayed previously',6967,none,1,'high qualif/self emp/mgmt',good
+<0,12,'existing paid',1282,none,1,skilled,bad
+<0,9,'critical/other existing credit',1288,guarantor,2,skilled,good
+<0,12,'all paid',339,none,1,'unskilled resident',good
+0<=X<200,24,'existing paid',3512,none,2,skilled,good
+'no checking',6,'critical/other existing credit',1898,none,2,'unskilled resident',good
+'no checking',24,'critical/other existing credit',2872,none,1,skilled,good
+'no checking',18,'critical/other existing credit',1055,none,2,skilled,good
+'no checking',15,'existing paid',1262,none,2,skilled,good
+0<=X<200,10,'existing paid',7308,none,1,'high qualif/self emp/mgmt',good
+'no checking',36,'existing paid',909,none,1,skilled,good
+'no checking',6,'existing paid',2978,none,1,skilled,good
+<0,18,'existing paid',1131,none,1,skilled,bad
+0<=X<200,11,'existing paid',1577,none,1,skilled,good
+'no checking',24,'existing paid',3972,none,1,skilled,good
+0<=X<200,24,'critical/other existing credit',1935,none,2,skilled,bad
+<0,15,'no credits/all paid',950,none,2,skilled,bad
+'no checking',12,'existing paid',763,none,1,skilled,good
+0<=X<200,24,'delayed previously',2064,none,1,'high qualif/self emp/mgmt',bad
+0<=X<200,8,'existing paid',1414,guarantor,1,skilled,good
+<0,21,'delayed previously',3414,none,2,skilled,bad
+'no checking',30,'all paid',7485,none,1,'high qualif/self emp/mgmt',bad
+<0,12,'existing paid',2577,none,1,skilled,good
+<0,6,'critical/other existing credit',338,none,2,skilled,good
+'no checking',12,'existing paid',1963,none,2,'high qualif/self emp/mgmt',good
+<0,21,'critical/other existing credit',571,none,2,skilled,good
+'no checking',36,'delayed previously',9572,none,2,skilled,bad
+0<=X<200,36,'delayed previously',4455,none,2,'high qualif/self emp/mgmt',bad
+<0,21,'all paid',1647,none,2,'unskilled resident',bad
+'no checking',24,'critical/other existing credit',3777,none,1,skilled,good
+0<=X<200,18,'critical/other existing credit',884,none,1,skilled,bad
+'no checking',15,'critical/other existing credit',1360,none,2,skilled,good
+0<=X<200,9,'all paid',5129,none,1,'high qualif/self emp/mgmt',bad
+0<=X<200,16,'critical/other existing credit',1175,none,3,'unemp/unskilled non res',good
+<0,12,'existing paid',674,none,1,skilled,bad
+0<=X<200,18,'no credits/all paid',3244,none,2,skilled,good
+'no checking',24,'existing paid',4591,none,3,'high qualif/self emp/mgmt',bad
+0<=X<200,48,'no credits/all paid',3844,none,1,'unskilled resident',bad
+0<=X<200,27,'existing paid',3915,none,1,skilled,bad
+'no checking',6,'existing paid',2108,none,1,skilled,good
+0<=X<200,45,'existing paid',3031,guarantor,1,skilled,bad
+0<=X<200,9,'critical/other existing credit',1501,none,2,'high qualif/self emp/mgmt',bad
+'no checking',6,'critical/other existing credit',1382,none,2,skilled,good
+0<=X<200,12,'existing paid',951,none,4,skilled,bad
+0<=X<200,24,'existing paid',2760,none,1,skilled,good
+0<=X<200,18,'delayed previously',4297,none,1,'high qualif/self emp/mgmt',bad
+'no checking',9,'critical/other existing credit',936,none,2,skilled,good
+<0,12,'existing paid',1168,none,1,'unskilled resident',good
+'no checking',27,'delayed previously',5117,none,2,skilled,good
+<0,12,'existing paid',902,none,1,skilled,bad
+'no checking',12,'critical/other existing credit',1495,none,2,'unskilled resident',good
+<0,30,'critical/other existing credit',10623,none,3,'high qualif/self emp/mgmt',good
+'no checking',12,'critical/other existing credit',1935,none,3,skilled,good
+0<=X<200,12,'critical/other existing credit',1424,none,1,skilled,good
+<0,24,'existing paid',6568,none,1,'unskilled resident',good
+'no checking',12,'existing paid',1413,none,1,skilled,good
+'no checking',9,'critical/other existing credit',3074,none,2,skilled,good
+'no checking',36,'existing paid',3835,none,1,'unskilled resident',good
+<0,27,'no credits/all paid',5293,none,2,skilled,bad
+>=200,30,'delayed previously',1908,none,1,'high qualif/self emp/mgmt',bad
+'no checking',36,'critical/other existing credit',3342,none,1,skilled,good
+0<=X<200,6,'critical/other existing credit',932,none,2,'unskilled resident',good
+<0,18,'no credits/all paid',3104,none,1,skilled,good
+>=200,36,'existing paid',3913,none,1,skilled,good
+<0,24,'existing paid',3021,none,1,'unskilled resident',good
+'no checking',10,'existing paid',1364,none,1,skilled,good
+0<=X<200,12,'existing paid',625,guarantor,1,'unskilled resident',good
+<0,12,'existing paid',1200,none,1,skilled,good
+'no checking',12,'existing paid',707,none,2,skilled,good
+'no checking',24,'delayed previously',2978,none,2,skilled,good
+'no checking',15,'existing paid',4657,none,1,skilled,good
+'no checking',36,'no credits/all paid',2613,none,2,skilled,good
+0<=X<200,48,'existing paid',10961,'co applicant',2,skilled,bad
+<0,12,'existing paid',7865,none,1,'high qualif/self emp/mgmt',bad
+'no checking',9,'existing paid',1478,none,1,skilled,bad
+<0,24,'existing paid',3149,none,1,skilled,good
+>=200,36,'existing paid',4210,none,1,skilled,bad
+'no checking',9,'existing paid',2507,none,1,'unskilled resident',good
+'no checking',12,'existing paid',2141,none,1,skilled,good
+0<=X<200,18,'existing paid',866,guarantor,1,'unskilled resident',good
+'no checking',4,'critical/other existing credit',1544,none,3,'unskilled resident',good
+<0,24,'existing paid',1823,none,1,'high qualif/self emp/mgmt',bad
+0<=X<200,6,'existing paid',14555,none,1,'unemp/unskilled non res',bad
+0<=X<200,21,'existing paid',2767,none,2,'unskilled resident',bad
+'no checking',12,'critical/other existing credit',1291,none,2,skilled,good
+<0,30,'existing paid',2522,guarantor,1,skilled,good
+<0,24,'existing paid',915,none,1,skilled,bad
+'no checking',6,'existing paid',1595,none,1,skilled,good
+<0,48,'no credits/all paid',4605,none,2,skilled,bad
+'no checking',12,'critical/other existing credit',1185,none,2,skilled,good
+'no checking',12,'all paid',3447,none,1,'unskilled resident',good
+'no checking',24,'existing paid',1258,none,1,skilled,good
+'no checking',12,'critical/other existing credit',717,none,3,skilled,good
+'no checking',6,'no credits/all paid',1204,none,1,skilled,good
+>=200,24,'existing paid',1925,none,1,skilled,good
+'no checking',18,'existing paid',433,'co applicant',1,skilled,bad
+<0,6,'critical/other existing credit',666,none,2,'unskilled resident',good
+>=200,12,'existing paid',2251,none,1,'unskilled resident',good
+0<=X<200,30,'existing paid',2150,guarantor,1,skilled,bad
+'no checking',24,'delayed previously',4151,none,2,skilled,good
+0<=X<200,9,'existing paid',2030,none,1,skilled,good
+0<=X<200,60,'delayed previously',7418,none,1,'unskilled resident',good
+'no checking',24,'critical/other existing credit',2684,none,2,'unskilled resident',good
+<0,12,'all paid',2149,none,1,skilled,bad
+'no checking',15,'existing paid',3812,none,1,skilled,good
+'no checking',11,'critical/other existing credit',1154,none,3,'unskilled resident',good
+<0,12,'existing paid',1657,none,1,skilled,good
+<0,24,'existing paid',1603,none,1,skilled,good
+<0,18,'critical/other existing credit',5302,none,3,'high qualif/self emp/mgmt',good
+'no checking',12,'critical/other existing credit',2748,none,3,'unskilled resident',good
+'no checking',10,'critical/other existing credit',1231,none,2,'unskilled resident',good
+0<=X<200,15,'existing paid',802,none,1,skilled,bad
+'no checking',36,'critical/other existing credit',6304,none,2,skilled,good
+'no checking',24,'existing paid',1533,none,1,skilled,good
+<0,14,'existing paid',8978,none,1,'high qualif/self emp/mgmt',bad
+'no checking',24,'existing paid',999,none,2,skilled,good
+'no checking',18,'existing paid',2662,none,1,skilled,good
+'no checking',12,'critical/other existing credit',1402,none,1,skilled,good
+0<=X<200,48,'all paid',12169,'co applicant',1,'high qualif/self emp/mgmt',good
+0<=X<200,48,'existing paid',3060,none,2,skilled,bad
+<0,30,'existing paid',11998,none,1,'unskilled resident',bad
+'no checking',9,'existing paid',2697,none,1,skilled,good
+'no checking',18,'critical/other existing credit',2404,none,2,skilled,good
+<0,12,'existing paid',1262,none,1,'unskilled resident',good
+'no checking',6,'existing paid',4611,none,1,skilled,bad
+'no checking',24,'existing paid',1901,none,1,'high qualif/self emp/mgmt',good
+'no checking',15,'critical/other existing credit',3368,none,2,skilled,good
+'no checking',12,'existing paid',1574,none,1,skilled,good
+>=200,18,'all paid',1445,none,1,'unskilled resident',good
+'no checking',15,'critical/other existing credit',1520,none,1,skilled,good
+0<=X<200,24,'critical/other existing credit',3878,none,1,skilled,good
+<0,47,'existing paid',10722,none,1,'unskilled resident',good
+<0,48,'existing paid',4788,none,1,skilled,good
+0<=X<200,48,'delayed previously',7582,none,1,'high qualif/self emp/mgmt',good
+0<=X<200,12,'existing paid',1092,guarantor,2,skilled,good
+<0,24,'delayed previously',1024,none,1,skilled,bad
+'no checking',12,'existing paid',1076,none,1,skilled,good
+0<=X<200,36,'existing paid',9398,none,1,'high qualif/self emp/mgmt',bad
+<0,24,'critical/other existing credit',6419,none,2,'high qualif/self emp/mgmt',good
+>=200,42,'critical/other existing credit',4796,none,1,skilled,good
+'no checking',48,'critical/other existing credit',7629,none,2,'high qualif/self emp/mgmt',good
+0<=X<200,48,'existing paid',9960,none,1,skilled,bad
+'no checking',12,'existing paid',4675,none,1,skilled,good
+'no checking',10,'existing paid',1287,'co applicant',1,'unskilled resident',good
+'no checking',18,'existing paid',2515,none,1,skilled,good
+0<=X<200,21,'critical/other existing credit',2745,none,2,skilled,good
+'no checking',6,'existing paid',672,none,1,'unemp/unskilled non res',good
+0<=X<200,36,'no credits/all paid',3804,none,1,skilled,bad
+>=200,24,'critical/other existing credit',1344,none,2,'unskilled resident',bad
+<0,10,'critical/other existing credit',1038,'co applicant',2,skilled,good
+'no checking',48,'critical/other existing credit',10127,none,1,skilled,bad
+'no checking',6,'existing paid',1543,none,1,skilled,good
+'no checking',30,'existing paid',4811,none,1,'unskilled resident',good
+<0,12,'existing paid',727,none,1,'unskilled resident',bad
+0<=X<200,8,'existing paid',1237,none,1,skilled,bad
+0<=X<200,9,'existing paid',276,none,1,'unskilled resident',good
+0<=X<200,48,'existing paid',5381,none,1,'unemp/unskilled non res',good
+'no checking',24,'existing paid',5511,none,1,skilled,good
+>=200,24,'existing paid',3749,none,1,skilled,good
+0<=X<200,12,'existing paid',685,none,1,'unskilled resident',bad
+>=200,4,'existing paid',1494,none,1,'unskilled resident',good
+<0,36,'all paid',2746,none,1,skilled,bad
+<0,12,'existing paid',708,guarantor,1,'unskilled resident',good
+0<=X<200,24,'existing paid',4351,none,1,'unskilled resident',good
+'no checking',12,'critical/other existing credit',701,none,2,skilled,good
+<0,15,'delayed previously',3643,none,2,'unskilled resident',good
+0<=X<200,30,'critical/other existing credit',4249,none,2,'high qualif/self emp/mgmt',bad
+<0,24,'existing paid',1938,none,1,skilled,bad
+<0,24,'existing paid',2910,none,1,'high qualif/self emp/mgmt',good
+<0,18,'existing paid',2659,none,1,skilled,good
+'no checking',18,'critical/other existing credit',1028,none,2,skilled,good
+<0,8,'critical/other existing credit',3398,none,2,'unskilled resident',good
+'no checking',12,'critical/other existing credit',5801,none,1,skilled,good
+'no checking',24,'existing paid',1525,none,1,skilled,good
+>=200,36,'existing paid',4473,none,1,skilled,good
+0<=X<200,6,'existing paid',1068,none,1,skilled,good
+<0,24,'critical/other existing credit',6615,none,2,'high qualif/self emp/mgmt',good
+'no checking',18,'critical/other existing credit',1864,none,2,skilled,bad
+0<=X<200,60,'existing paid',7408,none,1,'high qualif/self emp/mgmt',bad
+'no checking',48,'critical/other existing credit',11590,none,2,'unskilled resident',bad
+<0,24,'no credits/all paid',4110,none,2,skilled,bad
+<0,6,'critical/other existing credit',3384,none,1,'high qualif/self emp/mgmt',bad
+0<=X<200,13,'existing paid',2101,guarantor,1,'unskilled resident',good
+<0,15,'existing paid',1275,none,1,skilled,bad
+<0,24,'existing paid',4169,none,1,skilled,good
+0<=X<200,10,'existing paid',1521,none,1,'unskilled resident',good
+0<=X<200,24,'critical/other existing credit',5743,none,2,skilled,good
+<0,21,'existing paid',3599,none,1,'unskilled resident',good
+0<=X<200,18,'existing paid',3213,none,1,skilled,good
+0<=X<200,18,'existing paid',4439,'co applicant',1,'high qualif/self emp/mgmt',good
+>=200,10,'existing paid',3949,guarantor,1,'unskilled resident',good
+'no checking',15,'critical/other existing credit',1459,none,1,'unskilled resident',good
+0<=X<200,13,'critical/other existing credit',882,guarantor,2,skilled,good
+0<=X<200,24,'existing paid',3758,none,1,'unemp/unskilled non res',good
+'no checking',6,'delayed previously',1743,none,2,'unskilled resident',good
+0<=X<200,9,'critical/other existing credit',1136,none,2,skilled,bad
+'no checking',9,'existing paid',1236,none,1,skilled,good
+0<=X<200,9,'existing paid',959,none,1,skilled,bad
+'no checking',18,'critical/other existing credit',3229,none,1,'high qualif/self emp/mgmt',good
+<0,12,'no credits/all paid',6199,none,2,skilled,bad
+'no checking',10,'existing paid',727,none,1,skilled,good
+0<=X<200,24,'existing paid',1246,none,1,'unskilled resident',bad
+'no checking',12,'critical/other existing credit',2331,'co applicant',1,skilled,good
+'no checking',36,'delayed previously',4463,none,2,'high qualif/self emp/mgmt',bad
+'no checking',12,'existing paid',776,none,1,skilled,good
+<0,30,'existing paid',2406,none,1,skilled,bad
+0<=X<200,18,'existing paid',1239,none,1,skilled,good
+>=200,12,'existing paid',3399,none,1,'high qualif/self emp/mgmt',good
+>=200,12,'delayed previously',2247,none,2,skilled,good
+'no checking',6,'existing paid',1766,none,1,skilled,good
+<0,18,'existing paid',2473,none,1,'unemp/unskilled non res',bad
+'no checking',12,'existing paid',1542,none,1,skilled,good
+'no checking',18,'critical/other existing credit',3850,none,2,skilled,good
+<0,18,'existing paid',3650,none,1,skilled,good
+<0,36,'existing paid',3446,none,1,skilled,bad
+0<=X<200,18,'existing paid',3001,none,1,skilled,good
+'no checking',36,'existing paid',3079,none,1,skilled,good
+'no checking',18,'critical/other existing credit',6070,none,2,skilled,good
+'no checking',10,'critical/other existing credit',2146,none,2,skilled,good
+'no checking',60,'critical/other existing credit',13756,none,1,'high qualif/self emp/mgmt',good
+0<=X<200,60,'all paid',14782,none,2,'high qualif/self emp/mgmt',bad
+<0,48,'all paid',7685,guarantor,1,skilled,bad
+'no checking',18,'delayed previously',2320,none,2,skilled,good
+'no checking',7,'delayed previously',846,none,1,skilled,good
+0<=X<200,36,'existing paid',14318,none,1,'high qualif/self emp/mgmt',bad
+'no checking',6,'critical/other existing credit',362,none,2,'unskilled resident',good
+<0,20,'existing paid',2212,none,1,skilled,good
+0<=X<200,18,'existing paid',12976,none,1,'high qualif/self emp/mgmt',bad
+'no checking',22,'existing paid',1283,none,1,skilled,good
+>=200,12,'existing paid',1330,none,1,skilled,good
+'no checking',30,'delayed previously',4272,none,2,'unskilled resident',good
+'no checking',18,'critical/other existing credit',2238,none,2,skilled,good
+'no checking',18,'existing paid',1126,none,1,skilled,good
+0<=X<200,18,'critical/other existing credit',7374,none,2,'high qualif/self emp/mgmt',good
+0<=X<200,15,'critical/other existing credit',2326,none,1,skilled,good
+'no checking',9,'existing paid',1449,none,2,skilled,good
+'no checking',18,'existing paid',1820,none,1,'high qualif/self emp/mgmt',good
+0<=X<200,12,'existing paid',983,none,1,'unskilled resident',good
+<0,36,'existing paid',3249,none,1,'high qualif/self emp/mgmt',good
+<0,6,'critical/other existing credit',1957,none,1,skilled,good
+'no checking',9,'critical/other existing credit',2406,none,1,'high qualif/self emp/mgmt',good
+0<=X<200,39,'delayed previously',11760,none,1,skilled,good
+<0,12,'existing paid',2578,none,1,'high qualif/self emp/mgmt',good
+<0,36,'critical/other existing credit',2348,none,2,skilled,good
+0<=X<200,12,'existing paid',1223,none,2,skilled,bad
+'no checking',24,'critical/other existing credit',1516,none,2,'unskilled resident',good
+'no checking',18,'existing paid',1473,none,1,skilled,good
+0<=X<200,18,'critical/other existing credit',1887,none,2,skilled,good
+'no checking',24,'delayed previously',8648,none,2,skilled,bad
+'no checking',14,'delayed previously',802,none,2,'unskilled resident',good
+0<=X<200,18,'delayed previously',2899,none,1,skilled,good
+0<=X<200,24,'existing paid',2039,none,1,skilled,bad
+'no checking',24,'critical/other existing credit',2197,none,2,skilled,good
+<0,15,'existing paid',1053,none,1,skilled,good
+'no checking',24,'existing paid',3235,none,1,'high qualif/self emp/mgmt',good
+>=200,12,'critical/other existing credit',939,none,3,skilled,bad
+0<=X<200,24,'existing paid',1967,none,1,skilled,good
+'no checking',33,'critical/other existing credit',7253,none,2,'high qualif/self emp/mgmt',good
+'no checking',12,'critical/other existing credit',2292,none,2,'high qualif/self emp/mgmt',bad
+'no checking',10,'existing paid',1597,none,1,'unskilled resident',good
+<0,24,'existing paid',1381,none,1,skilled,bad
+'no checking',36,'critical/other existing credit',5842,none,2,skilled,good
+<0,12,'existing paid',2579,none,1,'unskilled resident',bad
+<0,18,'delayed previously',8471,none,2,skilled,good
+'no checking',21,'existing paid',2782,none,1,'high qualif/self emp/mgmt',good
+0<=X<200,18,'existing paid',1042,none,1,skilled,bad
+'no checking',15,'existing paid',3186,none,1,skilled,good
+0<=X<200,12,'existing paid',2028,none,1,skilled,good
+0<=X<200,12,'critical/other existing credit',958,none,2,'unskilled resident',good
+'no checking',21,'delayed previously',1591,none,2,'high qualif/self emp/mgmt',good
+0<=X<200,12,'existing paid',2762,none,1,skilled,bad
+0<=X<200,18,'existing paid',2779,none,1,skilled,good
+'no checking',28,'critical/other existing credit',2743,none,2,skilled,good
+'no checking',18,'critical/other existing credit',1149,none,2,skilled,good
+'no checking',9,'existing paid',1313,none,1,skilled,good
+<0,18,'critical/other existing credit',1190,none,3,'unemp/unskilled non res',bad
+'no checking',5,'existing paid',3448,none,1,'unskilled resident',good
+0<=X<200,24,'existing paid',11328,'co applicant',2,'high qualif/self emp/mgmt',bad
+<0,6,'critical/other existing credit',1872,none,3,'high qualif/self emp/mgmt',good
+'no checking',24,'critical/other existing credit',2058,none,2,skilled,good
+<0,9,'existing paid',2136,none,1,skilled,good
+0<=X<200,12,'existing paid',1484,none,1,skilled,bad
+'no checking',6,'existing paid',660,none,1,'unskilled resident',good
+'no checking',24,'critical/other existing credit',1287,none,2,skilled,good
+<0,42,'critical/other existing credit',3394,'co applicant',2,'unemp/unskilled non res',good
+>=200,12,'all paid',609,none,1,'unemp/unskilled non res',bad
+'no checking',12,'existing paid',1884,none,1,'high qualif/self emp/mgmt',good
+<0,12,'existing paid',1620,'co applicant',1,skilled,good
+0<=X<200,20,'delayed previously',2629,none,2,skilled,good
+'no checking',12,'existing paid',719,none,1,'unskilled resident',bad
+0<=X<200,48,'critical/other existing credit',5096,none,1,'high qualif/self emp/mgmt',bad
+'no checking',9,'critical/other existing credit',1244,none,2,'unskilled resident',good
+<0,36,'existing paid',1842,none,1,skilled,bad
+0<=X<200,7,'existing paid',2576,guarantor,1,skilled,good
+>=200,12,'existing paid',1424,none,1,'high qualif/self emp/mgmt',good
+0<=X<200,15,'delayed previously',1512,none,2,skilled,bad
+'no checking',36,'critical/other existing credit',11054,none,1,'high qualif/self emp/mgmt',good
+'no checking',6,'existing paid',518,none,1,skilled,good
+'no checking',12,'no credits/all paid',2759,none,2,skilled,good
+'no checking',24,'existing paid',2670,none,1,'high qualif/self emp/mgmt',good
+<0,24,'existing paid',4817,'co applicant',1,skilled,bad
+'no checking',24,'existing paid',2679,none,1,'high qualif/self emp/mgmt',good
+<0,11,'critical/other existing credit',3905,none,2,skilled,good
+<0,12,'existing paid',3386,none,1,skilled,bad
+<0,6,'existing paid',343,none,1,skilled,good
+'no checking',18,'existing paid',4594,none,1,skilled,good
+<0,36,'existing paid',3620,guarantor,1,skilled,good
+<0,15,'existing paid',1721,none,1,skilled,good
+0<=X<200,12,'existing paid',3017,none,1,'high qualif/self emp/mgmt',good
+0<=X<200,12,'existing paid',754,none,2,skilled,good
+'no checking',18,'existing paid',1950,none,2,skilled,good
+<0,24,'existing paid',2924,guarantor,1,skilled,good
+<0,24,'delayed previously',1659,none,1,'unskilled resident',bad
+'no checking',48,'delayed previously',7238,none,2,skilled,good
+'no checking',33,'delayed previously',2764,none,2,skilled,good
+'no checking',24,'delayed previously',4679,none,2,'unskilled resident',good
+0<=X<200,24,'existing paid',3092,none,1,skilled,bad
+<0,6,'existing paid',448,none,1,skilled,bad
+<0,9,'existing paid',654,none,1,'unskilled resident',bad
+'no checking',6,'existing paid',1238,none,1,'high qualif/self emp/mgmt',good
+0<=X<200,18,'critical/other existing credit',1245,none,1,skilled,bad
+<0,18,'no credits/all paid',3114,none,1,skilled,bad
+'no checking',39,'existing paid',2569,none,1,skilled,good
+>=200,24,'existing paid',5152,none,1,skilled,good
+0<=X<200,12,'existing paid',1037,none,1,'unskilled resident',good
+<0,15,'critical/other existing credit',1478,none,2,skilled,good
+0<=X<200,12,'critical/other existing credit',3573,none,1,'unskilled resident',good
+0<=X<200,24,'existing paid',1201,none,1,skilled,good
+<0,30,'existing paid',3622,none,2,skilled,good
+'no checking',15,'delayed previously',960,none,2,skilled,good
+'no checking',12,'critical/other existing credit',1163,none,1,skilled,good
+0<=X<200,6,'delayed previously',1209,none,1,'high qualif/self emp/mgmt',bad
+'no checking',12,'existing paid',3077,none,1,skilled,good
+'no checking',24,'existing paid',3757,'co applicant',1,skilled,good
+'no checking',10,'existing paid',1418,none,1,'unskilled resident',good
+'no checking',6,'existing paid',3518,guarantor,1,skilled,good
+'no checking',12,'critical/other existing credit',1934,none,2,skilled,good
+0<=X<200,27,'no credits/all paid',8318,none,2,'high qualif/self emp/mgmt',bad
+'no checking',6,'critical/other existing credit',1237,none,2,skilled,good
+0<=X<200,6,'existing paid',368,none,1,skilled,good
+<0,12,'critical/other existing credit',2122,none,2,'unskilled resident',good
+<0,24,'existing paid',2996,none,1,skilled,bad
+0<=X<200,36,'existing paid',9034,'co applicant',1,'high qualif/self emp/mgmt',bad
+'no checking',24,'critical/other existing credit',1585,none,2,skilled,good
+0<=X<200,18,'existing paid',1301,guarantor,1,'unskilled resident',good
+>=200,6,'critical/other existing credit',1323,none,2,skilled,good
+<0,24,'existing paid',3123,none,1,skilled,bad
+<0,36,'existing paid',5493,none,1,skilled,good
+>=200,9,'existing paid',1126,none,1,skilled,good
+0<=X<200,24,'critical/other existing credit',1216,none,2,skilled,bad
+<0,24,'existing paid',1207,none,1,skilled,bad
+'no checking',10,'existing paid',1309,guarantor,1,'unskilled resident',bad
+>=200,15,'critical/other existing credit',2360,none,1,skilled,good
+0<=X<200,15,'all paid',6850,none,1,'high qualif/self emp/mgmt',bad
+'no checking',24,'existing paid',1413,none,1,skilled,good
+'no checking',39,'existing paid',8588,none,1,'high qualif/self emp/mgmt',good
+<0,12,'existing paid',759,none,1,skilled,bad
+'no checking',36,'existing paid',4686,none,1,'high qualif/self emp/mgmt',good
+>=200,15,'existing paid',2687,none,1,skilled,good
+0<=X<200,12,'delayed previously',585,'co applicant',2,skilled,good
+'no checking',24,'existing paid',2255,none,1,skilled,good
+<0,6,'critical/other existing credit',609,none,2,skilled,good
+<0,6,'critical/other existing credit',1361,none,1,'unskilled resident',good
+'no checking',36,'critical/other existing credit',7127,none,2,skilled,bad
+<0,6,'existing paid',1203,none,1,skilled,good
+'no checking',6,'critical/other existing credit',700,none,2,skilled,good
+'no checking',24,'critical/other existing credit',5507,none,2,skilled,good
+<0,18,'existing paid',3190,none,1,skilled,bad
+<0,48,'no credits/all paid',7119,none,2,skilled,bad
+'no checking',24,'existing paid',3488,none,1,skilled,good
+0<=X<200,18,'existing paid',1113,guarantor,1,'unskilled resident',good
+0<=X<200,26,'existing paid',7966,none,2,skilled,good
+'no checking',15,'critical/other existing credit',1532,none,1,skilled,good
+'no checking',4,'critical/other existing credit',1503,none,2,'unskilled resident',good
+<0,36,'existing paid',2302,none,1,skilled,bad
+<0,6,'existing paid',662,none,1,'unskilled resident',good
+0<=X<200,36,'existing paid',2273,none,2,skilled,good
+0<=X<200,15,'existing paid',2631,none,2,skilled,bad
+'no checking',12,'delayed previously',1503,none,1,skilled,good
+'no checking',24,'existing paid',1311,none,1,skilled,good
+'no checking',24,'existing paid',3105,none,2,skilled,good
+>=200,21,'critical/other existing credit',2319,none,1,skilled,bad
+<0,6,'existing paid',1374,none,1,'high qualif/self emp/mgmt',good
+0<=X<200,18,'critical/other existing credit',3612,none,1,skilled,good
+<0,48,'existing paid',7763,none,1,'high qualif/self emp/mgmt',bad
+>=200,18,'existing paid',3049,none,1,'unskilled resident',good
+0<=X<200,12,'existing paid',1534,none,1,skilled,bad
+'no checking',24,'delayed previously',2032,none,2,skilled,good
+<0,30,'existing paid',6350,none,1,skilled,bad
+>=200,18,'existing paid',2864,none,1,'unskilled resident',bad
+'no checking',12,'critical/other existing credit',1255,none,2,'unskilled resident',good
+<0,24,'delayed previously',1333,none,2,skilled,bad
+'no checking',24,'critical/other existing credit',2022,none,1,skilled,good
+'no checking',24,'existing paid',1552,none,1,skilled,good
+<0,12,'all paid',626,none,1,'unskilled resident',bad
+'no checking',48,'critical/other existing credit',8858,none,2,skilled,good
+'no checking',12,'critical/other existing credit',996,none,2,skilled,good
+'no checking',6,'all paid',1750,none,1,'unskilled resident',good
+<0,48,'existing paid',6999,guarantor,2,skilled,bad
+0<=X<200,12,'critical/other existing credit',1995,none,1,skilled,good
+0<=X<200,9,'existing paid',1199,none,2,'high qualif/self emp/mgmt',good
+0<=X<200,12,'existing paid',1331,none,1,skilled,bad
+0<=X<200,18,'no credits/all paid',2278,none,2,skilled,bad
+'no checking',21,'no credits/all paid',5003,none,2,skilled,bad
+<0,24,'all paid',3552,none,1,skilled,bad
+0<=X<200,18,'critical/other existing credit',1928,none,2,'unskilled resident',bad
+<0,24,'existing paid',2964,none,1,skilled,good
+<0,24,'all paid',1546,guarantor,1,'unskilled resident',bad
+>=200,6,'delayed previously',683,none,1,skilled,good
+0<=X<200,36,'existing paid',12389,none,1,skilled,bad
+0<=X<200,24,'delayed previously',4712,none,2,'high qualif/self emp/mgmt',good
+0<=X<200,24,'delayed previously',1553,none,2,skilled,good
+<0,12,'existing paid',1372,none,1,skilled,bad
+'no checking',24,'critical/other existing credit',2578,none,1,skilled,good
+0<=X<200,48,'existing paid',3979,none,2,skilled,good
+<0,48,'existing paid',6758,none,1,skilled,bad
+<0,24,'existing paid',3234,none,1,'unskilled resident',bad
+'no checking',30,'critical/other existing credit',5954,'co applicant',1,skilled,good
+'no checking',24,'existing paid',5433,none,1,'high qualif/self emp/mgmt',good
+<0,15,'existing paid',806,none,1,'unskilled resident',good
+0<=X<200,9,'existing paid',1082,none,2,'unskilled resident',good
+'no checking',15,'critical/other existing credit',2788,'co applicant',2,skilled,good
+0<=X<200,12,'existing paid',2930,none,1,skilled,good
+'no checking',24,'critical/other existing credit',1927,none,2,skilled,good
+0<=X<200,36,'critical/other existing credit',2820,none,2,skilled,bad
+'no checking',24,'existing paid',937,none,2,'unskilled resident',good
+0<=X<200,18,'critical/other existing credit',1056,guarantor,2,skilled,bad
+0<=X<200,12,'critical/other existing credit',3124,none,2,'unskilled resident',good
+'no checking',9,'existing paid',1388,none,1,skilled,good
+0<=X<200,36,'existing paid',2384,none,1,'unskilled resident',bad
+'no checking',12,'existing paid',2133,none,1,'high qualif/self emp/mgmt',good
+<0,18,'existing paid',2039,none,1,skilled,bad
+<0,9,'critical/other existing credit',2799,none,2,skilled,good
+<0,12,'existing paid',1289,guarantor,1,'unskilled resident',good
+<0,18,'existing paid',1217,none,1,'unskilled resident',bad
+<0,12,'critical/other existing credit',2246,none,2,skilled,bad
+<0,12,'critical/other existing credit',385,none,4,'unskilled resident',good
+0<=X<200,24,'delayed previously',1965,none,2,skilled,good
+'no checking',21,'existing paid',1572,none,1,'unskilled resident',good
+0<=X<200,24,'existing paid',2718,none,1,'unskilled resident',bad
+<0,24,'all paid',1358,none,1,'high qualif/self emp/mgmt',bad
+0<=X<200,6,'all paid',931,none,1,'unskilled resident',bad
+<0,24,'existing paid',1442,none,2,skilled,bad
+0<=X<200,24,'no credits/all paid',4241,none,3,'unskilled resident',bad
+'no checking',18,'critical/other existing credit',2775,none,2,skilled,bad
+'no checking',24,'delayed previously',3863,none,1,skilled,good
+0<=X<200,7,'existing paid',2329,guarantor,1,skilled,good
+0<=X<200,9,'existing paid',918,none,1,skilled,bad
+0<=X<200,24,'all paid',1837,none,1,'unskilled resident',bad
+'no checking',36,'existing paid',3349,none,1,'high qualif/self emp/mgmt',bad
+>=200,10,'existing paid',1275,none,1,skilled,good
+<0,24,'all paid',2828,none,1,skilled,good
+'no checking',24,'critical/other existing credit',4526,none,1,'high qualif/self emp/mgmt',good
+0<=X<200,36,'existing paid',2671,'co applicant',1,skilled,bad
+'no checking',18,'existing paid',2051,none,1,skilled,good
+'no checking',15,'existing paid',1300,none,1,skilled,good
+<0,12,'existing paid',741,none,1,skilled,bad
+>=200,10,'existing paid',1240,none,1,'unskilled resident',bad
+<0,21,'existing paid',3357,none,1,skilled,good
+<0,24,'all paid',3632,guarantor,1,skilled,good
+'no checking',18,'delayed previously',1808,none,1,skilled,bad
+0<=X<200,48,'no credits/all paid',12204,none,1,'high qualif/self emp/mgmt',good
+0<=X<200,60,'delayed previously',9157,none,1,'high qualif/self emp/mgmt',good
+<0,6,'critical/other existing credit',3676,none,3,skilled,good
+0<=X<200,30,'existing paid',3441,'co applicant',1,skilled,bad
+'no checking',12,'existing paid',640,none,1,'unskilled resident',good
+0<=X<200,21,'critical/other existing credit',3652,none,2,skilled,good
+'no checking',18,'critical/other existing credit',1530,none,2,skilled,bad
+'no checking',48,'existing paid',3914,none,1,skilled,bad
+<0,12,'existing paid',1858,none,1,skilled,good
+<0,18,'existing paid',2600,none,2,skilled,bad
+'no checking',15,'existing paid',1979,none,1,skilled,good
+>=200,6,'existing paid',2116,none,1,skilled,good
+0<=X<200,9,'all paid',1437,none,1,skilled,bad
+'no checking',42,'critical/other existing credit',4042,none,2,skilled,good
+'no checking',9,'existing paid',3832,none,1,'unskilled resident',good
+<0,24,'existing paid',3660,none,1,skilled,good
+<0,18,'all paid',1553,none,1,skilled,bad
+0<=X<200,15,'existing paid',1444,none,1,skilled,good
+'no checking',9,'existing paid',1980,'co applicant',2,skilled,bad
+0<=X<200,24,'existing paid',1355,none,1,'unskilled resident',bad
+'no checking',12,'existing paid',1393,none,3,skilled,good
+'no checking',24,'existing paid',1376,none,1,skilled,good
+'no checking',60,'delayed previously',15653,none,2,skilled,good
+'no checking',12,'existing paid',1493,none,1,skilled,good
+<0,42,'delayed previously',4370,none,2,skilled,bad
+<0,18,'existing paid',750,none,1,'unemp/unskilled non res',bad
+0<=X<200,15,'existing paid',1308,none,2,'unskilled resident',good
+'no checking',15,'existing paid',4623,none,1,'high qualif/self emp/mgmt',bad
+'no checking',24,'critical/other existing credit',1851,guarantor,2,skilled,good
+<0,18,'critical/other existing credit',1880,none,2,'high qualif/self emp/mgmt',good
+'no checking',36,'delayed previously',7980,none,2,skilled,bad
+<0,30,'no credits/all paid',4583,guarantor,2,skilled,good
+'no checking',12,'existing paid',1386,none,1,skilled,bad
+>=200,24,'existing paid',947,none,1,skilled,bad
+<0,12,'existing paid',684,none,1,'unskilled resident',bad
+<0,48,'existing paid',7476,none,1,'high qualif/self emp/mgmt',good
+0<=X<200,12,'existing paid',1922,none,1,'unskilled resident',bad
+<0,24,'existing paid',2303,'co applicant',1,skilled,bad
+0<=X<200,36,'delayed previously',8086,none,4,'high qualif/self emp/mgmt',bad
+'no checking',24,'critical/other existing credit',2346,none,2,skilled,good
+<0,14,'existing paid',3973,none,1,skilled,good
+0<=X<200,12,'existing paid',888,none,1,'unskilled resident',bad
+'no checking',48,'existing paid',10222,none,1,skilled,good
+0<=X<200,30,'no credits/all paid',4221,none,2,skilled,good
+0<=X<200,18,'critical/other existing credit',6361,none,1,skilled,good
+>=200,12,'existing paid',1297,none,1,skilled,good
+<0,12,'existing paid',900,none,1,skilled,bad
+'no checking',21,'existing paid',2241,none,2,skilled,good
+0<=X<200,6,'delayed previously',1050,none,2,'high qualif/self emp/mgmt',good
+>=200,6,'critical/other existing credit',1047,none,1,'unskilled resident',good
+'no checking',24,'critical/other existing credit',6314,'co applicant',2,'high qualif/self emp/mgmt',good
+0<=X<200,30,'all paid',3496,none,1,skilled,good
+'no checking',48,'all paid',3609,none,1,skilled,good
+<0,12,'critical/other existing credit',4843,'co applicant',2,skilled,bad
+>=200,30,'critical/other existing credit',3017,none,1,skilled,good
+'no checking',24,'critical/other existing credit',4139,none,2,'unskilled resident',good
+'no checking',36,'existing paid',5742,none,2,skilled,good
+'no checking',60,'existing paid',10366,none,1,'high qualif/self emp/mgmt',good
+'no checking',6,'critical/other existing credit',2080,none,1,skilled,good
+'no checking',21,'delayed previously',2580,none,1,'unskilled resident',bad
+'no checking',30,'critical/other existing credit',4530,none,1,'high qualif/self emp/mgmt',good
+'no checking',24,'critical/other existing credit',5150,none,1,skilled,good
+0<=X<200,72,'existing paid',5595,none,1,skilled,bad
+<0,24,'existing paid',2384,none,1,'unskilled resident',good
+'no checking',18,'existing paid',1453,none,1,skilled,good
+'no checking',6,'existing paid',1538,none,1,skilled,good
+'no checking',12,'existing paid',2279,none,1,skilled,good
+'no checking',15,'delayed previously',1478,none,2,skilled,good
+'no checking',24,'critical/other existing credit',5103,none,3,skilled,good
+0<=X<200,36,'delayed previously',9857,none,2,'unskilled resident',good
+'no checking',60,'existing paid',6527,none,1,skilled,good
+>=200,10,'critical/other existing credit',1347,none,2,skilled,good
+0<=X<200,36,'delayed previously',2862,none,1,skilled,good
+'no checking',9,'existing paid',2753,'co applicant',1,skilled,good
+<0,12,'existing paid',3651,none,1,skilled,good
+<0,15,'critical/other existing credit',975,none,2,skilled,good
+0<=X<200,15,'existing paid',2631,none,1,'unskilled resident',good
+0<=X<200,24,'existing paid',2896,none,1,skilled,good
+<0,6,'critical/other existing credit',4716,none,2,'unskilled resident',good
+'no checking',24,'existing paid',2284,none,1,skilled,good
+'no checking',6,'existing paid',1236,none,1,skilled,good
+0<=X<200,12,'existing paid',1103,guarantor,2,skilled,good
+'no checking',12,'critical/other existing credit',926,none,1,'unemp/unskilled non res',good
+'no checking',18,'critical/other existing credit',1800,none,2,skilled,good
+>=200,15,'existing paid',1905,none,1,'high qualif/self emp/mgmt',good
+'no checking',12,'existing paid',1123,none,1,'unskilled resident',bad
+<0,48,'critical/other existing credit',6331,none,2,skilled,bad
+>=200,24,'existing paid',1377,none,1,skilled,good
+0<=X<200,30,'delayed previously',2503,none,2,skilled,good
+0<=X<200,27,'existing paid',2528,none,1,skilled,good
+'no checking',15,'existing paid',5324,none,1,skilled,good
+0<=X<200,48,'existing paid',6560,none,1,skilled,bad
+0<=X<200,12,'no credits/all paid',2969,none,2,skilled,bad
+0<=X<200,9,'existing paid',1206,none,1,skilled,good
+0<=X<200,9,'existing paid',2118,none,1,'unskilled resident',good
+'no checking',18,'critical/other existing credit',629,none,2,'high qualif/self emp/mgmt',good
+<0,6,'all paid',1198,none,1,skilled,bad
+'no checking',21,'existing paid',2476,none,1,'high qualif/self emp/mgmt',good
+<0,9,'critical/other existing credit',1138,none,2,'unskilled resident',good
+0<=X<200,60,'existing paid',14027,none,1,'high qualif/self emp/mgmt',bad
+'no checking',30,'critical/other existing credit',7596,none,2,skilled,good
+'no checking',30,'critical/other existing credit',3077,none,2,skilled,good
+'no checking',18,'existing paid',1505,none,1,'high qualif/self emp/mgmt',good
+>=200,24,'critical/other existing credit',3148,none,2,skilled,good
+0<=X<200,20,'no credits/all paid',6148,none,2,skilled,good
+>=200,9,'no credits/all paid',1337,none,2,'high qualif/self emp/mgmt',bad
+0<=X<200,6,'all paid',433,none,1,skilled,bad
+<0,12,'existing paid',1228,none,1,'unskilled resident',bad
+0<=X<200,9,'existing paid',790,none,1,'unskilled resident',good
+'no checking',27,'existing paid',2570,none,1,skilled,bad
+'no checking',6,'critical/other existing credit',250,none,2,'unskilled resident',good
+'no checking',15,'critical/other existing credit',1316,none,2,'unskilled resident',good
+<0,18,'existing paid',1882,none,2,skilled,bad
+0<=X<200,48,'all paid',6416,none,1,skilled,bad
+>=200,24,'critical/other existing credit',1275,none,2,skilled,good
+0<=X<200,24,'delayed previously',6403,none,1,skilled,good
+<0,24,'existing paid',1987,none,1,'unskilled resident',bad
+0<=X<200,8,'existing paid',760,guarantor,1,'unskilled resident',good
+'no checking',24,'existing paid',2603,none,1,skilled,good
+'no checking',4,'critical/other existing credit',3380,none,1,skilled,good
+0<=X<200,36,'all paid',3990,none,1,'unemp/unskilled non res',good
+0<=X<200,24,'existing paid',11560,none,2,'high qualif/self emp/mgmt',bad
+<0,18,'existing paid',4380,none,1,'unskilled resident',good
+'no checking',6,'critical/other existing credit',6761,none,2,'high qualif/self emp/mgmt',good
+0<=X<200,30,'no credits/all paid',4280,none,2,'unskilled resident',bad
+<0,24,'all paid',2325,none,1,skilled,good
+0<=X<200,10,'all paid',1048,none,1,'unskilled resident',good
+'no checking',21,'existing paid',3160,none,1,skilled,good
+<0,24,'all paid',2483,none,1,skilled,good
+<0,39,'critical/other existing credit',14179,none,2,'high qualif/self emp/mgmt',good
+<0,13,'critical/other existing credit',1797,none,2,'unskilled resident',good
+<0,15,'existing paid',2511,none,1,skilled,good
+<0,12,'existing paid',1274,none,1,'unskilled resident',bad
+'no checking',21,'existing paid',5248,none,1,skilled,good
+'no checking',15,'existing paid',3029,none,1,skilled,good
+<0,6,'existing paid',428,none,1,skilled,good
+<0,18,'existing paid',976,none,1,'unskilled resident',bad
+0<=X<200,12,'existing paid',841,none,1,'unskilled resident',good
+'no checking',30,'critical/other existing credit',5771,none,2,skilled,good
+'no checking',12,'delayed previously',1555,none,2,skilled,bad
+<0,24,'existing paid',1285,none,1,skilled,bad
+>=200,6,'critical/other existing credit',1299,none,3,'unemp/unskilled non res',good
+>=200,15,'critical/other existing credit',1271,none,2,skilled,bad
+'no checking',24,'existing paid',1393,guarantor,1,skilled,good
+<0,12,'critical/other existing credit',691,none,2,skilled,bad
+'no checking',15,'critical/other existing credit',5045,none,1,skilled,good
+<0,18,'critical/other existing credit',2124,none,2,skilled,bad
+<0,12,'existing paid',2214,none,1,'unskilled resident',good
+'no checking',21,'critical/other existing credit',12680,none,1,'high qualif/self emp/mgmt',bad
+'no checking',24,'critical/other existing credit',2463,none,2,skilled,good
+0<=X<200,12,'existing paid',1155,guarantor,2,'unskilled resident',good
+<0,30,'existing paid',3108,none,1,'unskilled resident',bad
+'no checking',10,'existing paid',2901,none,1,skilled,good
+0<=X<200,12,'critical/other existing credit',3617,none,3,skilled,good
+'no checking',12,'critical/other existing credit',1655,none,2,'unskilled resident',good
+<0,24,'existing paid',2812,none,1,skilled,good
+<0,36,'critical/other existing credit',8065,none,2,'high qualif/self emp/mgmt',bad
+'no checking',21,'critical/other existing credit',3275,none,1,'high qualif/self emp/mgmt',good
+'no checking',24,'critical/other existing credit',2223,none,2,skilled,good
+>=200,12,'critical/other existing credit',1480,none,3,'unemp/unskilled non res',good
+<0,24,'existing paid',1371,none,1,skilled,bad
+'no checking',36,'critical/other existing credit',3535,none,2,skilled,good
+<0,18,'existing paid',3509,guarantor,1,skilled,good
+'no checking',36,'critical/other existing credit',5711,none,2,'high qualif/self emp/mgmt',good
+0<=X<200,18,'existing paid',3872,none,1,skilled,good
+0<=X<200,39,'critical/other existing credit',4933,guarantor,2,skilled,bad
+'no checking',24,'critical/other existing credit',1940,none,1,skilled,good
+0<=X<200,12,'no credits/all paid',1410,none,1,'unskilled resident',good
+0<=X<200,12,'existing paid',836,none,1,'unskilled resident',bad
+0<=X<200,20,'existing paid',6468,none,1,'high qualif/self emp/mgmt',good
+0<=X<200,18,'existing paid',1941,none,1,'unskilled resident',good
+'no checking',22,'existing paid',2675,none,1,skilled,good
+'no checking',48,'critical/other existing credit',2751,none,2,skilled,good
+0<=X<200,48,'delayed previously',6224,none,1,skilled,bad
+<0,40,'critical/other existing credit',5998,none,1,skilled,bad
+0<=X<200,21,'existing paid',1188,none,1,skilled,bad
+'no checking',24,'existing paid',6313,none,1,'high qualif/self emp/mgmt',good
+'no checking',6,'critical/other existing credit',1221,none,2,skilled,good
+>=200,24,'existing paid',2892,none,1,skilled,good
+'no checking',24,'existing paid',3062,none,1,skilled,good
+'no checking',9,'existing paid',2301,none,1,skilled,good
+<0,18,'existing paid',7511,none,1,skilled,bad
+'no checking',12,'critical/other existing credit',1258,none,2,'unskilled resident',good
+'no checking',24,'delayed previously',717,none,2,skilled,good
+0<=X<200,9,'existing paid',1549,none,1,'unemp/unskilled non res',good
+'no checking',24,'critical/other existing credit',1597,none,2,skilled,good
+0<=X<200,18,'critical/other existing credit',1795,guarantor,2,'unskilled resident',good
+<0,20,'critical/other existing credit',4272,none,2,skilled,good
+'no checking',12,'critical/other existing credit',976,none,2,skilled,good
+0<=X<200,12,'existing paid',7472,none,1,'unemp/unskilled non res',good
+<0,36,'existing paid',9271,none,1,skilled,bad
+0<=X<200,6,'existing paid',590,none,1,'unskilled resident',good
+'no checking',12,'critical/other existing credit',930,none,4,skilled,good
+0<=X<200,42,'all paid',9283,none,1,'high qualif/self emp/mgmt',good
+0<=X<200,15,'no credits/all paid',1778,none,2,'unemp/unskilled non res',bad
+0<=X<200,8,'existing paid',907,none,1,skilled,good
+0<=X<200,6,'existing paid',484,guarantor,1,'unskilled resident',good
+<0,36,'critical/other existing credit',9629,none,2,skilled,bad
+<0,48,'existing paid',3051,none,1,skilled,bad
+<0,48,'existing paid',3931,none,1,skilled,bad
+0<=X<200,36,'delayed previously',7432,none,1,skilled,good
+'no checking',6,'existing paid',1338,none,1,skilled,good
+'no checking',6,'critical/other existing credit',1554,none,2,skilled,good
+<0,36,'existing paid',15857,'co applicant',1,'high qualif/self emp/mgmt',good
+<0,18,'existing paid',1345,none,1,skilled,bad
+'no checking',12,'existing paid',1101,none,2,skilled,good
+>=200,12,'existing paid',3016,none,1,skilled,good
+<0,36,'existing paid',2712,none,1,skilled,bad
+<0,8,'critical/other existing credit',731,none,2,'unskilled resident',good
+'no checking',18,'critical/other existing credit',3780,none,2,'high qualif/self emp/mgmt',good
+<0,21,'critical/other existing credit',1602,none,2,skilled,good
+<0,18,'critical/other existing credit',3966,none,3,skilled,bad
+'no checking',18,'no credits/all paid',4165,none,2,skilled,bad
+<0,36,'existing paid',8335,none,1,skilled,bad
+0<=X<200,48,'delayed previously',6681,none,1,skilled,good
+'no checking',24,'delayed previously',2375,none,2,skilled,good
+<0,18,'existing paid',1216,none,1,skilled,bad
+<0,45,'no credits/all paid',11816,none,2,skilled,bad
+0<=X<200,24,'existing paid',5084,none,1,skilled,good
+>=200,15,'existing paid',2327,none,1,'unskilled resident',bad
+<0,12,'no credits/all paid',1082,none,2,skilled,bad
+'no checking',12,'existing paid',886,none,1,skilled,good
+'no checking',4,'existing paid',601,none,1,'unskilled resident',good
+<0,24,'critical/other existing credit',2957,none,2,skilled,good
+'no checking',24,'critical/other existing credit',2611,'co applicant',2,skilled,good
+<0,36,'existing paid',5179,none,1,skilled,bad
+'no checking',21,'delayed previously',2993,none,2,'unskilled resident',good
+'no checking',18,'existing paid',1943,none,1,skilled,bad
+'no checking',24,'all paid',1559,none,1,skilled,good
+'no checking',18,'existing paid',3422,none,3,skilled,good
+0<=X<200,21,'existing paid',3976,none,1,skilled,good
+'no checking',18,'existing paid',6761,none,2,skilled,bad
+'no checking',24,'existing paid',1249,none,1,skilled,good
+<0,9,'existing paid',1364,none,1,skilled,good
+<0,12,'existing paid',709,none,1,'unskilled resident',bad
+<0,20,'critical/other existing credit',2235,guarantor,2,skilled,bad
+'no checking',24,'critical/other existing credit',4042,none,2,skilled,good
+'no checking',15,'critical/other existing credit',1471,none,2,skilled,good
+<0,18,'all paid',1442,none,2,'unskilled resident',bad
+'no checking',36,'delayed previously',10875,none,2,skilled,good
+'no checking',24,'existing paid',1474,none,1,skilled,good
+'no checking',10,'existing paid',894,none,1,skilled,good
+'no checking',15,'critical/other existing credit',3343,none,1,skilled,good
+<0,15,'existing paid',3959,none,1,skilled,bad
+'no checking',9,'existing paid',3577,guarantor,1,skilled,good
+'no checking',24,'critical/other existing credit',5804,none,2,skilled,good
+'no checking',18,'delayed previously',2169,none,1,skilled,bad
+<0,24,'existing paid',2439,none,1,skilled,bad
+'no checking',27,'critical/other existing credit',4526,none,2,'unskilled resident',good
+'no checking',10,'existing paid',2210,none,1,'unskilled resident',bad
+'no checking',15,'existing paid',2221,none,1,skilled,good
+<0,18,'existing paid',2389,none,1,skilled,good
+'no checking',12,'critical/other existing credit',3331,none,1,skilled,good
+'no checking',36,'existing paid',7409,none,2,skilled,good
+<0,12,'existing paid',652,none,1,skilled,good
+'no checking',36,'delayed previously',7678,none,2,skilled,good
+>=200,6,'critical/other existing credit',1343,none,2,skilled,good
+<0,24,'critical/other existing credit',1382,none,2,skilled,good
+'no checking',15,'existing paid',874,none,1,skilled,good
+<0,12,'existing paid',3590,'co applicant',1,'unskilled resident',good
+0<=X<200,11,'critical/other existing credit',1322,none,2,skilled,good
+<0,18,'all paid',1940,'co applicant',1,'high qualif/self emp/mgmt',good
+'no checking',36,'existing paid',3595,none,1,skilled,good
+<0,9,'existing paid',1422,none,1,'high qualif/self emp/mgmt',bad
+'no checking',30,'critical/other existing credit',6742,none,2,skilled,good
+'no checking',24,'existing paid',7814,none,1,'high qualif/self emp/mgmt',good
+'no checking',24,'existing paid',9277,none,1,skilled,good
+0<=X<200,30,'critical/other existing credit',2181,none,2,skilled,good
+'no checking',18,'critical/other existing credit',1098,none,2,'unemp/unskilled non res',good
+0<=X<200,24,'existing paid',4057,none,1,skilled,bad
+<0,12,'existing paid',795,none,1,skilled,bad
+0<=X<200,24,'critical/other existing credit',2825,none,2,skilled,good
+0<=X<200,48,'existing paid',15672,none,1,skilled,bad
+'no checking',36,'critical/other existing credit',6614,none,2,'high qualif/self emp/mgmt',good
+'no checking',28,'all paid',7824,guarantor,2,skilled,good
+<0,27,'critical/other existing credit',2442,none,4,'high qualif/self emp/mgmt',good
+'no checking',15,'critical/other existing credit',1829,none,2,skilled,good
+<0,12,'critical/other existing credit',2171,none,2,'unskilled resident',good
+0<=X<200,36,'critical/other existing credit',5800,none,2,skilled,good
+'no checking',18,'critical/other existing credit',1169,none,2,skilled,good
+'no checking',36,'delayed previously',8947,none,1,'high qualif/self emp/mgmt',good
+<0,21,'existing paid',2606,none,1,'high qualif/self emp/mgmt',good
+'no checking',12,'critical/other existing credit',1592,none,1,skilled,good
+'no checking',15,'existing paid',2186,none,1,'unskilled resident',good
+<0,18,'existing paid',4153,'co applicant',1,skilled,bad
+<0,16,'critical/other existing credit',2625,guarantor,1,skilled,bad
+'no checking',20,'critical/other existing credit',3485,none,2,skilled,good
+'no checking',36,'critical/other existing credit',10477,none,2,skilled,good
+'no checking',15,'existing paid',1386,none,1,skilled,good
+'no checking',24,'existing paid',1278,none,1,'high qualif/self emp/mgmt',good
+<0,12,'existing paid',1107,none,1,'high qualif/self emp/mgmt',good
+<0,21,'existing paid',3763,'co applicant',1,'unskilled resident',good
+0<=X<200,36,'existing paid',3711,none,1,skilled,good
+'no checking',15,'delayed previously',3594,none,2,'unskilled resident',good
+0<=X<200,9,'existing paid',3195,none,1,'unskilled resident',good
+'no checking',36,'delayed previously',4454,none,2,skilled,good
+0<=X<200,24,'critical/other existing credit',4736,none,1,'unskilled resident',bad
+0<=X<200,30,'existing paid',2991,none,1,skilled,good
+'no checking',11,'existing paid',2142,none,1,skilled,good
+<0,24,'all paid',3161,none,1,skilled,bad
+0<=X<200,48,'no credits/all paid',18424,none,1,'high qualif/self emp/mgmt',bad
+'no checking',10,'existing paid',2848,'co applicant',1,skilled,good
+<0,6,'existing paid',14896,none,1,'high qualif/self emp/mgmt',bad
+<0,24,'existing paid',2359,none,1,skilled,bad
+<0,24,'existing paid',3345,none,1,'high qualif/self emp/mgmt',bad
+'no checking',18,'critical/other existing credit',1817,none,2,skilled,good
+'no checking',48,'delayed previously',12749,none,1,'high qualif/self emp/mgmt',good
+<0,9,'existing paid',1366,none,1,skilled,bad
+0<=X<200,12,'existing paid',2002,none,1,skilled,good
+<0,24,'all paid',6872,none,1,skilled,bad
+<0,12,'all paid',697,none,2,skilled,bad
+<0,18,'critical/other existing credit',1049,none,1,skilled,good
+<0,48,'existing paid',10297,none,3,skilled,bad
+'no checking',30,'existing paid',1867,none,1,skilled,good
+<0,12,'delayed previously',1344,none,2,'unskilled resident',good
+<0,24,'existing paid',1747,'co applicant',1,'unskilled resident',good
+0<=X<200,9,'existing paid',1670,none,1,skilled,bad
+'no checking',9,'critical/other existing credit',1224,none,2,skilled,good
+'no checking',12,'critical/other existing credit',522,none,2,skilled,good
+<0,12,'existing paid',1498,none,1,skilled,good
+0<=X<200,30,'delayed previously',1919,none,2,'high qualif/self emp/mgmt',bad
+>=200,9,'existing paid',745,none,1,'unskilled resident',bad
+0<=X<200,6,'existing paid',2063,none,1,'high qualif/self emp/mgmt',good
+0<=X<200,60,'existing paid',6288,none,1,skilled,bad
+'no checking',24,'critical/other existing credit',6842,none,2,'high qualif/self emp/mgmt',good
+'no checking',12,'existing paid',3527,none,1,'high qualif/self emp/mgmt',good
+'no checking',10,'existing paid',1546,none,1,'unskilled resident',good
+'no checking',24,'existing paid',929,none,1,skilled,good
+'no checking',4,'critical/other existing credit',1455,none,3,'unskilled resident',good
+<0,15,'existing paid',1845,guarantor,1,skilled,good
+0<=X<200,48,'no credits/all paid',8358,none,2,skilled,good
+<0,24,'all paid',3349,none,1,skilled,bad
+'no checking',12,'existing paid',2859,none,1,'high qualif/self emp/mgmt',good
+'no checking',18,'existing paid',1533,'co applicant',1,'unskilled resident',bad
+'no checking',24,'existing paid',3621,none,2,skilled,bad
+0<=X<200,18,'critical/other existing credit',3590,none,3,'unemp/unskilled non res',good
+<0,36,'delayed previously',2145,none,2,skilled,bad
+0<=X<200,24,'existing paid',4113,none,1,skilled,bad
+'no checking',36,'existing paid',10974,none,2,'high qualif/self emp/mgmt',bad
+<0,12,'existing paid',1893,guarantor,1,skilled,good
+<0,24,'critical/other existing credit',1231,none,2,'high qualif/self emp/mgmt',good
+>=200,30,'critical/other existing credit',3656,none,2,'unskilled resident',good
+0<=X<200,9,'critical/other existing credit',1154,none,3,'unskilled resident',good
+<0,28,'existing paid',4006,none,1,'unskilled resident',bad
+0<=X<200,24,'existing paid',3069,none,1,skilled,good
+'no checking',6,'critical/other existing credit',1740,none,2,skilled,good
+0<=X<200,21,'delayed previously',2353,none,2,skilled,good
+'no checking',15,'existing paid',3556,none,1,skilled,good
+'no checking',24,'existing paid',2397,none,2,skilled,bad
+0<=X<200,6,'existing paid',454,none,1,'unskilled resident',good
+0<=X<200,30,'existing paid',1715,none,1,skilled,good
+0<=X<200,27,'critical/other existing credit',2520,none,2,'unskilled resident',bad
+'no checking',15,'existing paid',3568,none,1,'high qualif/self emp/mgmt',good
+'no checking',42,'existing paid',7166,none,1,skilled,good
+<0,11,'critical/other existing credit',3939,none,2,'unskilled resident',good
+0<=X<200,15,'existing paid',1514,guarantor,1,skilled,good
+'no checking',24,'existing paid',7393,none,1,'unskilled resident',good
+<0,24,'all paid',1193,'co applicant',2,'unemp/unskilled non res',bad
+<0,60,'existing paid',7297,'co applicant',1,skilled,bad
+'no checking',30,'critical/other existing credit',2831,none,1,skilled,good
+>=200,24,'existing paid',1258,none,1,'unskilled resident',good
+0<=X<200,6,'existing paid',753,guarantor,1,skilled,good
+0<=X<200,18,'delayed previously',2427,none,2,skilled,good
+'no checking',24,'delayed previously',2538,none,2,'unskilled resident',bad
+0<=X<200,15,'all paid',1264,none,1,skilled,bad
+0<=X<200,30,'critical/other existing credit',8386,none,1,skilled,bad
+'no checking',48,'existing paid',4844,none,1,'high qualif/self emp/mgmt',bad
+>=200,21,'existing paid',2923,none,1,'high qualif/self emp/mgmt',good
+<0,36,'existing paid',8229,none,1,skilled,bad
+'no checking',24,'critical/other existing credit',2028,none,2,'unskilled resident',good
+<0,15,'critical/other existing credit',1433,none,2,skilled,good
+>=200,42,'no credits/all paid',6289,none,2,skilled,good
+'no checking',13,'existing paid',1409,none,1,skilled,good
+<0,24,'existing paid',6579,none,1,'high qualif/self emp/mgmt',good
+0<=X<200,24,'critical/other existing credit',1743,none,2,'unskilled resident',good
+'no checking',12,'critical/other existing credit',3565,none,2,'unskilled resident',good
+'no checking',15,'all paid',1569,none,1,'unskilled resident',good
+<0,18,'existing paid',1936,none,2,'unskilled resident',good
+<0,36,'existing paid',3959,none,1,'high qualif/self emp/mgmt',good
+'no checking',12,'existing paid',2390,none,1,skilled,good
+'no checking',12,'existing paid',1736,none,1,'unskilled resident',good
+<0,30,'existing paid',3857,none,1,'high qualif/self emp/mgmt',good
+'no checking',12,'existing paid',804,none,1,skilled,good
+<0,45,'existing paid',1845,none,1,skilled,bad
+0<=X<200,45,'critical/other existing credit',4576,none,1,skilled,good
