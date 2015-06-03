@@ -4,14 +4,16 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 import model.Profile;
 import vue.IHM;
+import weka.classifiers.bayes.NaiveBayesUpdateable;
 import weka.core.Instances;
 import weka.core.converters.ArffSaver;
 import weka.core.converters.CSVLoader;
-
-import com.livingobjects.common.configuration.Configuration;
 
 public class Controller {
 
@@ -28,35 +30,20 @@ public class Controller {
 	
 	public Integer calculerProfile(Profile profile) {
 		try {
-			Configuration configuration = Configuration.Create.create(
-					"./configuration.xml", "./configuration.properties");
-			String csvFile = configuration.get("file.csv");
-			String arffFile = configuration.get("file.arff");
+			String arffFile = "./resources/German_Bank.arff";
 
-			if (!(new File(arffFile).exists())) {
-				convertCsvToArff(csvFile, arffFile);
-			}
-
-			BufferedReader wekaReader = new BufferedReader(new FileReader(arffFile));
+			BufferedReader wekaReader = new BufferedReader(new FileReader(arffFile)); // Get the arff file
+			Instances data = new Instances(wekaReader); // Build the data instances
+			wekaReader.close(); // Close the reader since we won't need it again.
+			data.setClassIndex(data.numAttributes() - 1); // Set the target attribute used for classification, it's last column => number of attributes - 1
 			
-
-		} catch (IOException e) {
+			NaiveBayesUpdateable nb = new NaiveBayesUpdateable();
+			nb.buildClassifier(data);
+			
+			
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		return null;
-	}
-
-	private ArffSaver convertCsvToArff(String csvFilePath, String arffFilePath)
-			throws IOException {
-		CSVLoader loader = new CSVLoader();
-		loader.setSource(new File(csvFilePath));
-		Instances data = loader.getDataSet();
-
-		ArffSaver saver = new ArffSaver();
-		saver.setInstances(data);
-		saver.setFile(new File(arffFilePath));
-		saver.setDestination(new File(arffFilePath));
-		saver.writeBatch();
-		return saver;
 	}
 }
