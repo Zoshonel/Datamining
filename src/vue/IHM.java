@@ -131,26 +131,26 @@ public class IHM extends JFrame{
 	}
 
 	public String getChamp_num_1_text() {
-		if(champ_num_1.getSelectedText() == null){
+		if(champ_num_1.getText() == null){
 			return "0";
 		}else{
-			return champ_num_1.getSelectedText();
+			return champ_num_1.getText();
 		}
 	}
 
 	public String getChamp_num_2_text() {
-		if(champ_num_2.getSelectedText() == null){
+		if(champ_num_2.getText() == null){
 			return "0";
 		}else{
-		return champ_num_2.getSelectedText();
+		return champ_num_2.getText();
 		}
 	}
 
 	public String getChamp_num_4_text() {
-		if(champ_num_4.getSelectedText() == null){
+		if(champ_num_4.getText() == null){
 			return "0";
 		}else{
-		return champ_num_4.getSelectedText();
+		return champ_num_4.getText();
 		}
 	}
 
