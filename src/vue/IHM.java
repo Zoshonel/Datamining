@@ -5,13 +5,14 @@ import java.awt.GridLayout;
 import javax.swing.*;
 
 import controller.Controller;
+import model.KeyValeur;
 import model.Profile;
 
 public class IHM extends JFrame{
 	
 	
 	private JTextField champ_num_1,champ_num_2,champ_num_4;
-	private JComboBox<String> champ_box_3,champ_box_5,champ_box_6,champ_box_7;
+	private JComboBox<KeyValeur> champ_box_3,champ_box_5,champ_box_6,champ_box_7;
 	private JProgressBar progressBar;
 	private Controller controller;
 
@@ -48,17 +49,17 @@ public class IHM extends JFrame{
 			
 			
 			//model et combobox pour les variables qualitatives
-			String[] liste_code1 = new String[]{"A11","A12","A13","A14"};
-			champ_box_3 = new JComboBox<String>(liste_code1);
+			KeyValeur[] liste1 = new KeyValeur[]{new KeyValeur("A11","<0"),new KeyValeur("A12","0<=X<200"),new KeyValeur("A13",">=200"),new KeyValeur("A14","no checking")};
+			champ_box_3 = new JComboBox<KeyValeur>(liste1);
 			
-			String[] liste_code2 = new String[]{"A30","A31","A32","A33","A34"};
-			champ_box_5 = new JComboBox<String>(liste_code2);
+			KeyValeur[] liste2 = new KeyValeur[]{new KeyValeur("A30","no credits/all paid"),new KeyValeur("A31","all paid"),new KeyValeur("A32","existing paid"),new KeyValeur("A33","delayed previously"),new KeyValeur("A34","critical/other existing credit")};
+			champ_box_5 = new JComboBox<KeyValeur>(liste2);
 			
-			String[] liste_code3 = new String[]{"A171","A172","A173","A174"};
-			champ_box_6 = new JComboBox<String>(liste_code3);
+			KeyValeur[] liste3 = new KeyValeur[]{new KeyValeur("A171","unemp/unskilled non res"),new KeyValeur("A172","unskilled resident"),new KeyValeur("A173","skilled"),new KeyValeur("A174","high qualif/self emp/mgmt")};
+			champ_box_6 = new JComboBox<KeyValeur>(liste3);
 			
-			String[] liste_code4 = new String[]{"A101","A102","A103"};
-			champ_box_7 = new JComboBox<String>(liste_code4);
+			KeyValeur[] liste4 = new KeyValeur[]{new KeyValeur("A101","none"),new KeyValeur("A102","co applicant"),new KeyValeur("A103","guarantor")};
+			champ_box_7 = new JComboBox<KeyValeur>(liste4);
 			
 			//Bouton evaluer le profile
 			JButton b_evaluer = new JButton("Evaluer");
@@ -107,7 +108,7 @@ public class IHM extends JFrame{
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		//dimentionner la fenetre
-		this.setSize(700, 150);
+		this.setSize(800, 150);
 		this.setResizable(false);
 		
 		
@@ -155,19 +156,23 @@ public class IHM extends JFrame{
 	}
 
 	public String getChamp_box_3_text() {
-		return champ_box_3.getSelectedItem().toString();
+		KeyValeur  item = (KeyValeur)champ_box_3.getSelectedItem();
+		return item.getValeur();
 	}
 
 	public String getChamp_box_5_text() {
-		return champ_box_5.getSelectedItem().toString();
+		KeyValeur  item = (KeyValeur)champ_box_5.getSelectedItem();
+		return item.getValeur();
 	}
 
 	public String getChamp_box_6_text() {
-		return champ_box_6.getSelectedItem().toString();
+		KeyValeur  item = (KeyValeur)champ_box_6.getSelectedItem();
+		return item.getValeur();
 	}
 
 	public String getChamp_box_7_text() {
-		return champ_box_7.getSelectedItem().toString();
+		KeyValeur  item = (KeyValeur)champ_box_7.getSelectedItem();
+		return item.getValeur();
 	}
 
 
