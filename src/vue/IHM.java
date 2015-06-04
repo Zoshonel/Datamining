@@ -128,14 +128,20 @@ public class IHM extends JFrame{
 	public void update(double res_decision){
 		int value = (int) res_decision;
 		this.progressBar.setValue(value);
-		if(value>=60){
+		if(value>=70){
 			this.resultat.setText("Good");
 			this.resultat.setForeground(new Color(0, 204, 102));
 			progressBar.setForeground(new Color(0, 204, 102));
 		}else{
-			this.resultat.setText("Bad");
-			progressBar.setForeground(Color.RED);
-			this.resultat.setForeground(Color.RED);
+			if(value<50){
+				this.resultat.setText("Bad");
+				progressBar.setForeground(Color.RED);
+				this.resultat.setForeground(Color.RED);
+			}else{
+				this.resultat.setText("Bad");
+				this.resultat.setForeground(new Color(255, 128, 0));
+				progressBar.setForeground(new Color(255, 128, 0));
+			}
 		}
 		
 	}
